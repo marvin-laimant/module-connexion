@@ -1,0 +1,107 @@
+html{min-height: 100%;}
+
+body{
+	padding: none;
+	min-height: 100%;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url('IMG/bodyback.jpg');
+	background-size: cover;
+	position: relative;
+	overflow-x: hidden;
+}
+
+
+
+
+/*INDEX*/
+/*CONNEXION*/
+.main_connexion{
+	width: 100%; 
+	display: flex; 
+	align-items: center; 
+	flex-direction: column; 
+	font-family: cursive;
+	font-size: 2.5em;
+	margin: 15vh 0 25vh 0;
+	height: 40%;
+}
+	.main_connexion form{text-align: center;}
+
+/*INSCRIPTION*/
+.main_inscription{
+	width: 100%; 
+	display: flex; 
+	align-items: center; 
+	flex-direction: column; 
+	font-family: cursive;
+	font-size: 2.5em;
+	margin: 15vh 0 25vh 0;
+}
+	.main_inscription form{text-align: center;}
+		.main_inscription label, .main_inscription h2{backdrop-filter: blur(1px);}
+		.main_inscription input{height: 8%; padding: 0 2% 0 0;}
+
+/*PROFIL*/
+.main_profil{
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	width: 100%; 
+	font-family: cursive;
+	font-size: 2em;
+	margin: 15vh 0 25vh 0;
+}
+	.profil_head{margin-top: 5vh; width: 30%; display: flex; justify-content: space-between; align-items: center;}
+	.changes{display: flex; flex-wrap: wrap; justify-content: center; width: 30%; text-align: center;}
+		.changesbutton{height: 10%; border-radius: 10px;}
+
+/*ADMIN*/
+.main_admin{
+	width: 100%; 
+	display: flex; 
+	align-items: center; 
+	flex-direction: column; 
+	font-family: cursive;
+	margin: 15vh 0 25vh 0;
+	height: 40%;
+}
+	.main_admin table{text-align: center;}
+		.main_admin th, .main_admin td{width: 20%; height: 10%; font-size: 2.5em; border: solid 1px black;}
+		.main_admin th{background-color: gray;}
+		.main_admin td{background-color: white;}
+
+/*HEADER & FOOTER*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+header{
+	width: 100%; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	font-family: cursive; 
+	font-size: 1.5em;
+	height: 10%;
+}
+
+header img{padding: 1%; width: 10%;}
+
+header nav{display: flex; justify-content: center; width: 100%;}
+	header a{text-decoration: none; color: black;}
+		header a:hover{border-bottom: solid 5px gray; color: white;}
+	header ul{display: flex; justify-content: space-evenly; width: 50%;}
+	header li{list-style: none;}
+		.liprofil{opacity: 0; position: absolute; z-index: -10;}
+	
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+footer{width: 100%; height: 10%; display: flex; align-items: center; position: absolute; bottom: 0;}
+	.network{width: 30%; height: 100%;}
+		.network img{width: 40%; border-radius: 10px; border: 3px solid black; filter: grayscale(100%);}
+			.network img:hover{filter: grayscale(0); width: 50%; transition: 0.3s;}
+	.link_container{display: flex; justify-content: space-evenly; width: 70%;}
+
+footer a{text-decoration: none; color: black; font-family: cursive; font-weight: bold;}
+	footer a:hover{text-decoration: underline;}
+footer ul{display: flex; justify-content: space-evenly;}
+footer li{list-style: none;}
+	.liadmin{opacity: 0; position: absolute; z-index: -10;}
